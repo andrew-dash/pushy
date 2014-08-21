@@ -1,0 +1,208 @@
+/* General styles  */
+.na-menu {
+	background: #868686;
+	position: fixed;
+}
+
+.na-menu h3 {
+	color: #868686;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #4A4A4A;
+}
+
+.na-menu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.na-menu a:hover {
+	background: #4A4A4A;
+}
+
+.na-menu a:active {
+	background: #4A4A4A;
+	color: #868686;
+}
+
+.na-bar {
+	width: 100%;
+	color: #fff;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+	z-index: 2000;
+	padding: 20px;
+}
+.logo{
+	display: inline;
+	padding: 20px;
+}
+.drop{
+	padding: 20px;
+	display: inline;
+}
+
+/* top or side */
+
+.na-menu-vertical {
+	text-align: center;
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 9999;
+}
+
+.na-menu-vertical a {
+	padding: 1em;
+}
+
+.na-menu-horizontal {
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.na-menu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.na-menu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+}
+
+/*  left or right */
+
+.na-menu-left {
+	left: -240px;
+}
+
+.na-menu-right {
+	right: -240px;
+}
+
+.na-menu-left.na-menu-open {
+	left: 0px;
+}
+
+.na-menu-right.na-menu-open {
+	right: 0px;
+}
+
+/* top or bottom */
+
+.na-menu-top {
+	top: -400px;
+}
+
+.na-menu-top-sub {
+	top: -400px;
+}
+
+.na-menu-bottom {
+	bottom: -4000px;
+}
+
+.na-menu-top.na-menu-open {
+	top: 0px;
+}
+
+.na-menu-top-sub.na-menu-open {
+	top: 60px;
+}
+
+.na-menu-bottom.na-menu-open {
+	bottom: 0px;
+}
+
+/* push body */
+
+.na-menu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.na-menu-push-toright {
+	left: 240px;
+}
+
+.na-menu-push-toleft {
+	left: -240px;
+}
+
+.top-push-toBottom {
+	top: 400px;
+}
+
+.na-bar.na-menu-open{
+	top: 400px;
+}
+
+/* Transitions */
+
+.na-menu,
+.na-menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.na-menu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.na-menu-top {
+		top: -110px;
+	}
+	.na-menu-top-sub {
+		top: -110px;
+	}
+
+	.na-menu-bottom {
+		bottom: -110px;
+	}
+
+	.top-push-toBottom {
+	top: 110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.na-menu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.na-menu-left,
+	.na-menu-push-toleft {
+		left: -190px;
+	}
+
+	.na-menu-right {
+		right: -190px;
+	}
+
+	.na-menu-push-toright {
+		left: 190px;
+	}
+}
