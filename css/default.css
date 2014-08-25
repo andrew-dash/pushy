@@ -30,7 +30,7 @@ a:hover {
 .main {
 	width: 90%;
 	max-width: 69em;
-	margin: 32em auto 0 auto;
+	margin: 60px auto 0 auto;
 }
 
 .main > section {
@@ -44,19 +44,18 @@ a:hover {
 	color: #ccc;
 }
 
-.main > section button {
+.main > section button,
+nav button {
 	border: none;
 	background: #4A4A4A;
 	color: #fff;
-	padding: 1.5em;
 	display: inline;
-	width: 40%;
 	cursor: pointer;
-	margin: 0 0 0.3em 0;
 	font-size: 0.8em;
 }
 
-.main > section button:hover {
+.main > section button:hover,
+nav button:hover {
 	background: #4A4A4A;
 }
 
