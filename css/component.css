@@ -32,19 +32,32 @@
 .na-bar {
 	width: 100%;
 	color: #fff;
-	height: 60px;
+	height: 80px;
 	top: 0px;
 	left: 0px;
 	z-index: 2000;
-	padding: 20px;
+	padding: 30px;
+	text-align: center;
 }
 .logo{
 	display: inline;
-	padding: 20px;
+	padding: 30px;
 }
 .drop{
-	padding: 20px;
+	padding: 30px;
 	display: inline;
+}
+
+.hero{
+	padding: 60px;
+	color: #fff;
+	height: 275px;
+	margin-top: 80px;
+	background: #818181;
+}
+.na-bar.shrink{
+	height: 60px;
+	padding: 20px;
 }
 
 /* top or side */
@@ -119,7 +132,7 @@
 }
 
 .na-menu-top-sub.na-menu-open {
-	top: 60px;
+	top: 80px;
 }
 
 .na-menu-bottom.na-menu-open {
@@ -154,6 +167,8 @@
 /* Transitions */
 
 .na-menu,
+.na-bar,
+.hero,
 .na-menu-push {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
