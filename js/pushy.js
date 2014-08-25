@@ -72,3 +72,39 @@ $(showSubPush).on( "click", function() {
       showSubPush.click()
     });
 });
+
+
+var scrollHeader = (function() {
+
+	var docElem = document.documentElement,
+		header = document.querySelector( '.na-bar' ),
+		didScroll = false,
+		changeHeaderOn = 200;
+
+	function init() {
+		window.addEventListener( 'scroll', function( event ) {
+			if( !didScroll ) {
+				didScroll = true;
+				setTimeout( scrollPage, 150 );
+			}
+		}, false );
+	}
+
+	function scrollPage() {
+		var sy = scrollY();
+		if ( sy >= changeHeaderOn ) {
+			$( header ).addClass( 'shrink' );
+		}
+		else {
+			$( header ).removeClass( 'shrink' );
+		}
+		didScroll = false;
+	}
+
+	function scrollY() {
+		return window.pageYOffset || docElem.scrollTop;
+	}
+
+	init();
+
+})();
